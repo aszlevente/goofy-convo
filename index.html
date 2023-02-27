@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sugma</title>
+</head>
+<body>
+    <style>
+        p, div {
+            text-align: center;
+        }
+        p {white-space: pre-line;}
+    </style>
+
+    <p id="convo">It's so sad that Steve Jobs died of Ligma.</p>
+    <div>
+        <button onclick="answer(0)">-Who the hell is Steve Jobs?</button>
+        <button onclick="answer(1)">-What the hell is Ligma?</button>
+    </div>
+
+    <script>
+        var ended = false
+        function answer(dia) {
+            if (ended) return
+            p = document.getElementById("convo")
+            if (dia == 0) {
+                convo.innerHTML += "\n-Who the hell is Steve Jobs?\n-Ligma Balls"
+            } else {
+                convo.innerHTML += "\n-What the hell is Ligma?\n-Joe Mama"
+            }
+            window.location.href = "https://en.wikipedia.org/wiki/Hairy_ball_theorem";
+            ended = true
+        }
+    </script>
+</body>
